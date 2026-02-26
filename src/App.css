@@ -1,1 +1,181 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center Container */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  background: #111;
+  padding: 40px;
+  width: 420px;
+  max-width: 95%;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(255, 208, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Animated Glow Border */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, #ffd000, transparent, #ffd000);
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.4;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #ffd000;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #ffd000;
+  box-shadow: 0 0 10px #ffd00055;
+  outline: none;
+}
+
+/* Error Text */
+.error {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ffd000, #ffae00);
+  color: black;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 208, 0, 0.4);
+}
+
+button:disabled {
+  background: #444;
+  color: #999;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Back + Next Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  flex: 1;
+}
+
+/* Progress Bar */
+.progress {
+  height: 6px;
+  background: #333;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ffd000, #ffae00);
+  transition: width 0.4s ease;
+}
+
+/* Password Toggle */
+.password-field {
+  position: relative;
+}
+
+.password-field span {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Review Section */
+.review p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Success Screen */
+.success {
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.success h2 {
+  color: #ffd000;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
