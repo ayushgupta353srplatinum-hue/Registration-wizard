@@ -31,3 +31,12 @@ This project was built to practice React concepts like:
 - Conditional Rendering
 - Component structure
 - Form handling
+
+## Live Demo Link
+https://registration-wizard.vercel.app/
+
+## YouTube Link
+
+
+##  Home Page
+![Home Page Screenshot](week-7.png)
