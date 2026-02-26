@@ -1,11 +1,11 @@
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -20,7 +20,7 @@ body {
   align-items: center;
 }
 
-/* Center Container */
+
 .container {
   width: 100%;
   display: flex;
@@ -28,7 +28,7 @@ body {
   align-items: center;
 }
 
-/* Card */
+
 .card {
   background: #111;
   padding: 40px;
@@ -41,7 +41,7 @@ body {
   animation: fadeIn 0.6s ease-in-out;
 }
 
-/* Animated Glow Border */
+
 .card::before {
   content: "";
   position: absolute;
@@ -52,7 +52,7 @@ body {
   opacity: 0.4;
 }
 
-/* Heading */
+
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -60,7 +60,7 @@ h2 {
   color: #ffd000;
 }
 
-/* Inputs */
+
 input {
   width: 100%;
   padding: 12px;
@@ -79,14 +79,14 @@ input:focus {
   outline: none;
 }
 
-/* Error Text */
+
 .error {
   color: #ff4d4d;
   font-size: 12px;
   margin-top: 5px;
 }
 
-/* Buttons */
+
 button {
   width: 100%;
   padding: 12px;
@@ -112,7 +112,7 @@ button:disabled {
   box-shadow: none;
 }
 
-/* Back + Next Buttons */
+
 .buttons {
   display: flex;
   gap: 10px;
@@ -122,7 +122,6 @@ button:disabled {
   flex: 1;
 }
 
-/* Progress Bar */
 .progress {
   height: 6px;
   background: #333;
@@ -137,7 +136,7 @@ button:disabled {
   transition: width 0.4s ease;
 }
 
-/* Password Toggle */
+
 .password-field {
   position: relative;
 }
@@ -152,13 +151,13 @@ button:disabled {
   font-weight: 500;
 }
 
-/* Review Section */
+
 .review p {
   margin: 8px 0;
   font-size: 14px;
 }
 
-/* Success Screen */
+
 .success {
   text-align: center;
   animation: fadeIn 0.5s ease-in-out;
@@ -168,12 +167,13 @@ button:disabled {
   color: #ffd000;
 }
 
-/* Animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(15px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
